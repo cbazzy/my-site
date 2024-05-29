@@ -55,7 +55,7 @@ export default function Particle() {
               modes: {
                 attract: {
                   distance: 1000,
-                  duration: 5,
+                  duration: 2,
                   speed: 3,
                 },
                 push: {
