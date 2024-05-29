@@ -44,21 +44,26 @@ export default function Particle() {
               events: {
                 onClick: {
                   enable: true,
-                  mode: "repulse",
+                  mode: ["attract", "slow"],
                 },
                 onHover: {
                   enable: true,
-                  mode: "grab",
+                  mode: ["grab", "repulse"],
                 },
                 resize: {},
               },
               modes: {
+                attract: {
+                  distance: 1000,
+                  duration: 5,
+                  speed: 3,
+                },
                 push: {
-                  quantity: 4,
+                  quantity: 2,
                 },
                 repulse: {
-                  distance: 200,
-                  duration: 1,
+                  distance: 50,
+                  duration: 2,
                 },
               },
             },
