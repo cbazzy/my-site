@@ -27,7 +27,7 @@ export default function Particle() {
     });
   }, []);
 
-  const particlesLoaded = (container: HTMLElement) => {};
+  const particlesLoaded = async (container: any) => {};
 
   return (
     <>
@@ -50,7 +50,7 @@ export default function Particle() {
                   enable: true,
                   mode: "grab",
                 },
-                resize: true,
+                resize: {},
               },
               modes: {
                 push: {
@@ -86,7 +86,6 @@ export default function Particle() {
               number: {
                 density: {
                   enable: true,
-                  area: 800,
                 },
                 value: 160,
               },
