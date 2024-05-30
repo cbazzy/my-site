@@ -6,10 +6,9 @@ import Welcome from "./components/welcome";
 export default function Home() {
   return (
     <main className="w-screen h-screen flex flex-col items-center justify-center">
-      <Particle />
       <br></br>
       <Welcome />
-      <br></br>
+      <Particle />
       <br></br>
       <br></br>
       <br></br>
