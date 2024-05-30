@@ -8,11 +8,7 @@ export default function Home() {
   return (
     <>
       <NavBar />
-      <main className="w-screen h-screen flex flex-col px-[20%] desktop:px-[30%]">
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
+      <main className="w-screen h-screen flex flex-col px-[20%] desktop:px-[30%] desktop:pt-40">
         <br></br>
         <p className="animate-fade-up animate-duration-800 animate-once text-lg font-semibold">
           Hello!
