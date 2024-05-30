@@ -1,8 +1,9 @@
+import Link from "next/link";
 import React from "react";
 
 export default function NavBar() {
   return (
-    <div className="sticky top-0 animate-fade-down animate-once navbar bg-stone-100 dark:bg-stone-900 border-b-2 border-base-200">
+    <div className="sticky top-0 animate-fade-down animate-duration-200 animate-once navbar bg-stone-100 dark:bg-stone-900 border-b-2 border-base-200">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
@@ -38,7 +39,9 @@ export default function NavBar() {
         </div>
       </div>
       <div className="navbar-center">
-        <a className="btn btn-ghost text-xl font-light">Callum Basnett</a>
+        <Link href="/">
+          <button className="btn btn-ghost text-xl">callumb.me</button>
+        </Link>
       </div>
       <div className="navbar-end">
         <button className="btn btn-ghost btn-circle">
