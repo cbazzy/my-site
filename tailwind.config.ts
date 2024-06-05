@@ -13,6 +13,14 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      backdropBlur: {
+        none: "0",
+        blur: "blur(2px)",
+        "blur-lg": "blur(4px)",
+        "blur-xl": "blur(8px)",
+        "blur-2xl": "blur(12px)",
+        "blur-3xl": "blur(16px)",
+      },
     },
     screens: {
       desktop: "1024px",

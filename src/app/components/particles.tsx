@@ -53,10 +53,16 @@ export default function Particle() {
                 resize: {},
               },
               modes: {
+                grab: {
+                  distance: 200,
+                  links: {
+                    opacity: 1,
+                  },
+                },
                 attract: {
                   distance: 1000,
-                  duration: 2,
-                  speed: 3,
+                  duration: 0.1,
+                  speed: 10,
                 },
                 push: {
                   quantity: 2,
