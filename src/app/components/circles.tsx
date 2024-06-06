@@ -5,7 +5,8 @@ import { loadFull } from "tsparticles";
 export default function Circles() {
   const [init, setInit] = useState(false);
   const [darkMode, setDarkMode] = useState(
-    window.matchMedia &&
+    typeof window !== "undefined" &&
+      window.matchMedia &&
       window.matchMedia("(prefers-color-scheme: dark)").matches,
   );
 
