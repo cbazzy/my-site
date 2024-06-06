@@ -1,9 +1,26 @@
 import Link from "next/link";
 import React from "react";
 
-export default function NavBar() {
+type Visibility = {
+  Welcome: boolean;
+  About: boolean;
+  // Add other components here
+};
+
+type ToggleVisibility = (componentName: keyof Visibility) => void;
+
+type WelcomeProps = {
+  toggleVisibility: ToggleVisibility;
+};
+
+export default function NavBar({ toggleVisibility }: WelcomeProps) {
+  const handleClick = () => {
+    toggleVisibility("Welcome");
+    toggleVisibility("About");
+  };
+
   return (
-    <div className="z-50 sticky top-0 animate-fade-down animate-duration-200 animate-once navbar bg-stone-100 dark:bg-stone-950 border-b-2 border-base-200 backdrop-filter backdrop-blur-lg bg-opacity-30 dark:backdrop-filter dark:backdrop-blur-lg dark:bg-opacity-30">
+    <div className="z-50 sticky top-0 animate-fade-down animate-duration-200 animate-once navbar bg-stone-100 dark:bg-stone-950 border-b-2 border-base-200 backdrop-filter backdrop-blur-lg bg-opacity-10 dark:backdrop-filter dark:backdrop-blur-lg dark:bg-opacity-30">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
@@ -39,7 +56,7 @@ export default function NavBar() {
         </div>
       </div>
       <div className="navbar-center">
-        <Link href="/">
+        <Link href="/" onClick={handleClick}>
           <button className="btn btn-ghost text-xl">callumb.me</button>
         </Link>
       </div>

@@ -1,13 +1,29 @@
 "use client";
 import Image from "next/image";
-import Particle from "../components/particles";
-import Welcome from "../components/welcome";
-import NavBar from "../components/nav";
+import Particle from "./particles";
+import Welcome from "./welcome";
+import NavBar from "./nav";
 
-export default function Home() {
+type Visibility = {
+  Welcome: boolean;
+  About: boolean;
+  // Add other components here
+};
+
+type ToggleVisibility = (componentName: keyof Visibility) => void;
+
+type AboutProps = {
+  toggleVisibility: ToggleVisibility;
+};
+
+export default function About({ toggleVisibility }: AboutProps) {
+  const handleClick = () => {
+    toggleVisibility("About");
+  };
+
   return (
     <>
-      <NavBar />
+      <NavBar toggleVisibility={toggleVisibility} />
       <main className="z-10 file:w-screen h-screen flex flex-col px-[20%] desktop:px-[30%]">
         <br></br>
         <p className="animate-fade-up animate-duration-800 animate-once text-lg font-semibold">
