@@ -2,6 +2,8 @@ import { useCallback, useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadFull } from "tsparticles";
 
+// these are the particles that are in the background of the landing page
+
 export default function Particle() {
   const [init, setInit] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(
@@ -38,6 +40,7 @@ export default function Particle() {
           style={{
             zIndex: 1,
           }}
+          // configuration of the particle effects: colours, speed, size, etc.
           options={{
             fpsLimit: 120,
             interactivity: {

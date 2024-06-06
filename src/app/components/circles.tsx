@@ -1,9 +1,13 @@
-import { useCallback, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadFull } from "tsparticles";
 
 export default function Circles() {
   const [init, setInit] = useState(false);
+  const [darkMode, setDarkMode] = useState(
+    window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches,
+  );
 
   useEffect(() => {
     console.log("init");
@@ -12,6 +16,16 @@ export default function Circles() {
     }).then(() => {
       setInit(true);
     });
+  }, []);
+
+  useEffect(() => {
+    const darkModeQuery = window.matchMedia("(prefers-color-scheme: dark)");
+    const changeHandler = () => setDarkMode(darkModeQuery.matches);
+
+    darkModeQuery.addEventListener("change", changeHandler);
+
+    // Cleanup function to remove the event listener
+    return () => darkModeQuery.removeEventListener("change", changeHandler);
   }, []);
 
   const particlesLoaded = async (container: any) => {};
@@ -32,22 +46,28 @@ export default function Circles() {
                 events: {
                   onClick: {
                     enable: false,
-                    mode: ["attract", "slow"],
+                    mode: ["grab"],
                   },
                   onHover: {
-                    enable: false,
-                    mode: ["slow", "blur"],
+                    enable: true,
+                    mode: ["grab", "attract"],
                   },
                   resize: {},
                 },
                 modes: {
                   grab: {
-                    distance: 200,
+                    distance: 1000,
+                    links: {
+                      opacity: darkMode ? 0.25 : 0.15,
+                      decay: 1,
+                      color: darkMode ? "#e0f2fe" : "#333333",
+                    },
                   },
                   attract: {
-                    distance: 1000,
-                    duration: 0.1,
-                    speed: 10,
+                    distance: 300,
+                    duration: 0.4,
+                    speed: 0.001,
+                    decay: 1,
                   },
                   push: {
                     quantity: 2,
@@ -90,10 +110,10 @@ export default function Circles() {
                   value: 40,
                 },
                 opacity: {
-                  value: { min: 0, max: 0.6 },
+                  value: { min: 0.1, max: 0.6 },
                   animation: {
                     enable: true,
-                    speed: 0.1,
+                    speed: 0.05,
                     sync: false,
                   },
                 },
