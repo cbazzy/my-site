@@ -51,7 +51,7 @@ export default function Circles() {
                   },
                   onHover: {
                     enable: true,
-                    mode: ["grab", "attract"],
+                    mode: ["attract"],
                   },
                   resize: {},
                 },
