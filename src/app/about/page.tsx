@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <NavBar />
       <Circles />
-      <main className="z-10 file:w-screen h-screen flex flex-col px-[10%] desktop:px-[20%] ">
+      <main className="caret-transparent z-10 file:w-screen h-screen flex flex-col px-[10%] desktop:px-[20%] ">
         <br></br>
         <div className="desktop:px-[5%] px-0 desktop:pt-12">
           <div className="px-5 animate-fade backdrop-filter backdrop-blur-lg border-2 border-base-200 dark:border-stone-950 bg-stone-100 dark:bg-stone-950 bg-opacity-30 dark:bg-opacity-30 rounded-box p-4">
