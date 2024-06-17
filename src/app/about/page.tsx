@@ -10,7 +10,6 @@ export default function Home() {
   return (
     <>
       <NavBar />
-      <div></div>
       <Circles />
       <h1></h1>
       <main className="min-h-120vh desktop:h-screen">
