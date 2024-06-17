@@ -66,7 +66,7 @@ export default function Home() {
               </p>
               <br></br>
               <div className="flex flex-col items-center desktop:flex-row desktop:justify-center desktop:mx-5">
-                <Link href="https://socbrain.vercel.app/">
+                <Link href="https://socbrain.vercel.app/" target="_blank">
                   <Image
                     className="p-5"
                     src="/socbrain1.png"
@@ -75,7 +75,7 @@ export default function Home() {
                     height={300}
                   />
                 </Link>
-                <Link href="https://socbrain.vercel.app/">
+                <Link href="https://socbrain.vercel.app/" target="_blank">
                   <Image
                     className="p-5"
                     src="/socbrain2.png"
