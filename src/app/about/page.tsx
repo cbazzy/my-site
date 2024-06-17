@@ -12,11 +12,11 @@ export default function Home() {
       <NavBar />
       <Circles />
       <h1></h1>
-      <main className="min-h-120vh desktop:h-screen">
+      <main className="min-h-120vh">
         <div className="caret-transparent z-10 file:w-screen flex flex-col px-[10%] desktop:px-[20%]">
           {" "}
           <br></br>
-          <div className="desktop:px-[5%] px-0 desktop:pt-6">
+          <div className="desktop:px-[5%] px-0 pt-6">
             <div className="px-5 animate-fade backdrop-filter backdrop-blur-lg border-2 border-base-200 dark:border-stone-950 bg-stone-100 dark:bg-stone-950 bg-opacity-30 dark:bg-opacity-30 rounded-box p-4">
               <p className="animate-fade-up animate-duration-800 animate-once text-3xl font-semibold">
                 Hello!
@@ -42,7 +42,7 @@ export default function Home() {
         <div className="caret-transparent z-10 file:w-screen flex flex-col px-[10%] desktop:px-[20%] pb-5 ">
           {" "}
           <br></br>
-          <div className="desktop:px-[5%] px-0 desktop:pt-12">
+          <div className="desktop:px-[5%] px-0 pb-6">
             <div className="px-5 animate-fade animate-duration-[2000ms] animate-delay-[3000ms] backdrop-filter backdrop-blur-lg border-2 border-base-200 dark:border-stone-950 bg-stone-100 dark:bg-stone-950 bg-opacity-30 dark:bg-opacity-30 rounded-box p-4">
               <p className="animate-fade-up animate-duration-800 animate-once text-xl font-semibold">
                 My latest project
@@ -60,15 +60,16 @@ export default function Home() {
                 play around.
               </p>
               <br></br>
-              <p>
-                Click the images below to visit the site. Note: this is a
-                desktop only application.
+              <p>Click the images below to visit the site. </p>
+              <br></br>
+              <p className="italic">
+                Note: this is a desktop only application.
               </p>
               <br></br>
               <div className="flex flex-col items-center desktop:flex-row desktop:justify-center desktop:mx-5">
                 <Link href="https://socbrain.vercel.app/" target="_blank">
                   <Image
-                    className="p-5"
+                    className="p-5 hover:scale-105 transition-transform duration-300 ease-in-out"
                     src="/socbrain1.png"
                     alt="School of Code"
                     width={300}
@@ -77,7 +78,7 @@ export default function Home() {
                 </Link>
                 <Link href="https://socbrain.vercel.app/" target="_blank">
                   <Image
-                    className="p-5"
+                    className="p-5 hover:scale-105 transition-transform duration-300 ease-in-out"
                     src="/socbrain2.png"
                     alt="School of Code"
                     width={300}

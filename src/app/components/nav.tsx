@@ -6,7 +6,11 @@ export default function NavBar() {
     <div className="z-50 sticky top-0 animate-fade-down animate-duration-200 animate-once navbar bg-stone-100 dark:bg-stone-950 border-b-2 border-base-200 backdrop-filter backdrop-blur-lg bg-opacity-30 dark:backdrop-filter dark:backdrop-blur-lg dark:bg-opacity-30">
       <div className="navbar-start">
         <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
+          <div
+            tabIndex={0}
+            role="button"
+            className="btn btn-ghost btn-circle ml-2"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -83,7 +87,7 @@ export default function NavBar() {
           </svg>
         </button> */}
         <a href="/CV_June_24.pdf" download="Callum_B_CV.pdf" target="_blank">
-          <button className="btn btn-ghost px-5">
+          <button className="btn btn-ghost btn-circle mr-2">
             <svg
               className="fill-black dark:fill-white"
               width="24"
