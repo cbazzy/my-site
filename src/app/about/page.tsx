@@ -70,18 +70,9 @@ export default function Home() {
                 <Link href="https://socbrain.vercel.app/" target="_blank">
                   <Image
                     className="p-5 hover:scale-105 transition-transform duration-300 ease-in-out"
-                    src="/socbrain1.png"
-                    alt="School of Code"
-                    width={300}
-                    height={300}
-                  />
-                </Link>
-                <Link href="https://socbrain.vercel.app/" target="_blank">
-                  <Image
-                    className="p-5 hover:scale-105 transition-transform duration-300 ease-in-out"
                     src="/socbrain2.png"
                     alt="School of Code"
-                    width={300}
+                    width={1000}
                     height={300}
                   />
                 </Link>
