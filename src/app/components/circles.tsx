@@ -33,7 +33,7 @@ export default function Circles() {
 
   return (
     <>
-      <div className="animate-fade fixed">
+      <div className="animate-fade fixed top-0 bottom-0 left-0 right-0 z-0">
         {init && (
           <Particles
             id="tsparticles"
