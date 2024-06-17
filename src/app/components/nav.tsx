@@ -63,6 +63,7 @@ export default function NavBar() {
         <a href="/CV_June_24.pdf" download="Callum_B_CV.pdf">
           <button className="btn btn-ghost px-5">
             <svg
+              className="fill-black dark:fill-white"
               width="24"
               height="24"
               xmlns="http://www.w3.org/2000/svg"
