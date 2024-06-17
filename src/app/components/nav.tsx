@@ -82,7 +82,7 @@ export default function NavBar() {
             />
           </svg>
         </button> */}
-        <a href="/CV_June_24.pdf" download="Callum_B_CV.pdf">
+        <a href="/CV_June_24.pdf" download="Callum_B_CV.pdf" target="_blank">
           <button className="btn btn-ghost px-5">
             <svg
               className="fill-black dark:fill-white"
