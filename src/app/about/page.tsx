@@ -12,7 +12,7 @@ export default function Home() {
       <NavBar />
       <Circles />
       <h1></h1>
-      <main className="min-h-120vh">
+      <main className="min-h-120vh desktop:h-screen">
         <div className="caret-transparent z-10 file:w-screen flex flex-col px-[10%] desktop:px-[20%]">
           {" "}
           <br></br>
