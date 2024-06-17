@@ -4,34 +4,88 @@ import Particle from "../components/particles";
 import Welcome from "../components/welcome";
 import NavBar from "../components/nav";
 import Circles from "../components/circles";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <>
       <NavBar />
       <Circles />
-      <main className="caret-transparent z-10 file:w-screen h-screen flex flex-col px-[10%] desktop:px-[20%] ">
-        <br></br>
-        <div className="desktop:px-[5%] px-0 desktop:pt-12">
-          <div className="px-5 animate-fade backdrop-filter backdrop-blur-lg border-2 border-base-200 dark:border-stone-950 bg-stone-100 dark:bg-stone-950 bg-opacity-30 dark:bg-opacity-30 rounded-box p-4">
-            <p className="animate-fade-up animate-duration-800 animate-once text-lg font-semibold">
-              Hello!
-            </p>
-            <br></br>
-            <br></br>
-            <p className="animate-fade animate-duration-1000 animate-delay-[1200ms] animate-once">
-              I&apos;m Callum, a junior software developer based in the UK.
-              I&apos;m currently studying at the School of Code bootcamp as a
-              member of Cohort 16 and I&apos;m getting ready for my first role
-              in the industry.
-            </p>
-            <br></br>
-            <br></br>
-            <p className="animate-fade animate-duration-1000 animate-delay-[2200ms] animate-once">
-              Thanks for taking a look at my site. It&apos;s under construction,
-              but I hope to have it finished soon.
-            </p>
-            <br></br>
+      <h1></h1>
+      <main className="min-h-120vh">
+        <div className="caret-transparent z-10 file:w-screen flex flex-col px-[10%] desktop:px-[20%]">
+          {" "}
+          <br></br>
+          <div className="desktop:px-[5%] px-0 desktop:pt-12">
+            <div className="px-5 animate-fade backdrop-filter backdrop-blur-lg border-2 border-base-200 dark:border-stone-950 bg-stone-100 dark:bg-stone-950 bg-opacity-30 dark:bg-opacity-30 rounded-box p-4">
+              <p className="animate-fade-up animate-duration-800 animate-once text-3xl font-semibold">
+                Hello!
+              </p>
+              <br></br>
+              <br></br>
+              <p className="animate-fade animate-duration-1000 animate-delay-[1200ms] animate-once">
+                I&apos;m Callum, a junior software developer based in the UK.
+                I&apos;m currently studying at the School of Code bootcamp as a
+                member of Cohort 16 and I&apos;m getting ready for my first role
+                in the industry.
+              </p>
+              <br></br>
+              <br></br>
+              <p className="animate-fade animate-duration-1000 animate-delay-[2200ms] animate-once">
+                Thanks for taking a look at my site. It&apos;s under
+                construction, but I hope to have it finished soon.
+              </p>
+              <br></br>
+            </div>
+          </div>
+        </div>
+        <div className="caret-transparent z-10 file:w-screen flex flex-col px-[10%] desktop:px-[20%] pb-5 ">
+          {" "}
+          <br></br>
+          <div className="desktop:px-[5%] px-0 desktop:pt-12">
+            <div className="px-5 animate-fade animate-duration-[2000ms] animate-delay-[3000ms] backdrop-filter backdrop-blur-lg border-2 border-base-200 dark:border-stone-950 bg-stone-100 dark:bg-stone-950 bg-opacity-30 dark:bg-opacity-30 rounded-box p-4">
+              <p className="animate-fade-up animate-duration-800 animate-once text-xl font-semibold">
+                My latest project
+              </p>
+              <br></br>
+              <p className="animate-fade animate-duration-1000 animate-delay-[1200ms] animate-once">
+                The latest project I worked on was an e-learning quiz platform
+                for the school of code. We worked in a team of 6 to create a
+                full stack application that allows users to create and take
+                quizzes and view their results.
+              </p>
+              <br></br>
+              <p className="animate-fade animate-duration-1000 animate-delay-[2200ms] animate-once">
+                Feel free to check out the project, create an account and have a
+                play around.
+              </p>
+              <br></br>
+              <p>
+                Click the images below to visit the site. Note: this is a
+                desktop only application.
+              </p>
+              <br></br>
+              <div className="flex flex-col items-center desktop:flex-row desktop:justify-center desktop:mx-5">
+                <Link href="https://socbrain.vercel.app/">
+                  <Image
+                    className="p-5"
+                    src="/socbrain1.png"
+                    alt="School of Code"
+                    width={300}
+                    height={300}
+                  />
+                </Link>
+                <Link href="https://socbrain.vercel.app/">
+                  <Image
+                    className="p-5"
+                    src="/socbrain2.png"
+                    alt="School of Code"
+                    width={300}
+                    height={300}
+                  />
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </main>
