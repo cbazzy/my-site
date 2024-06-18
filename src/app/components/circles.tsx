@@ -96,7 +96,9 @@ export default function Circles() {
               },
               particles: {
                 color: {
-                  value: ["#333333", "#666666", "#999999", "#cccccc"],
+                  value: darkMode
+                    ? ["#333333", "#666666", "#999999", "#FFDAB9"]
+                    : ["#87CEEB", "#999999", "#999999", "#87CEEB"],
                 },
                 links: {
                   enable: false,
