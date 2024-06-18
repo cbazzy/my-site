@@ -73,8 +73,7 @@ export default function Home() {
                 Note: this is a desktop only application.
               </p>
               <br></br>
-
-              <div className="flex flex-col items-center desktop:flex-row desktop:justify-center desktop:mx-5 mb-4">
+              <div className="flex flex-col items-center desktop:flex-row desktop:justify-center desktop:mx-5">
                 <Link href="https://socbrain.vercel.app/" target="_blank">
                   <Image
                     className="p-5 hover:scale-[101%] transition-transform-shadow duration-300 ease-in-out rounded-[30px] hover:shadow-light hover:grayscale-0 dark:hover:shadow-dark active:scale-[99%] active:shadow-none grayscale-[70%]"
