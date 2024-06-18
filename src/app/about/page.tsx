@@ -56,6 +56,13 @@ export default function Home() {
               </p>
               <br></br>
               <p className="animate-fade animate-duration-1000 animate-delay-[2200ms] animate-once">
+                There are two user modes: student and coach. Coaches can create
+                and edit quizzes and compare results across all students.
+                Students can complete quizzes and track their progress as well
+                as earn achievements and see how they rank in the leaderboards.
+              </p>
+              <br></br>
+              <p>
                 Feel free to check out the project, create an account and have a
                 play around.
               </p>
