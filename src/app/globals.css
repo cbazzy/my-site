@@ -9,8 +9,8 @@
 }
 
 ::selection {
-  color: green;
-  text-shadow: 0 0 3px lightgreen;
+  color: navy;
+  text-shadow: 0 0 8px #87ceeb;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,8 +20,8 @@
     --background-end-rgb: 20, 20, 20;
   }
   ::selection {
-    color: lightgreen;
-    text-shadow: 0 0 3px lightgreen;
+    color: #ffdab9;
+    text-shadow: 0 0 4px yellow;
   }
 }
 

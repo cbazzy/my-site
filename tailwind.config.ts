@@ -9,8 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       boxShadow: {
-        black: "0 0 6px rgba(100, 100, 100, 0.1)",
-        white: "0 0 6px rgba(255, 255, 255, 0.1)",
+        light: "0 0 40px rgba(135, 206, 235, 0.7)",
+        dark: "0 0 20px rgba(255, 218, 185, 0.9)",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
