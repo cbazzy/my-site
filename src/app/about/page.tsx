@@ -17,7 +17,7 @@ export default function Home() {
           {" "}
           <br></br>
           <div className="desktop:px-[5%] px-0 pt-6">
-            <div className="px-5 animate-fade backdrop-filter backdrop-blur-lg border-2 border-base-200 dark:border-stone-950 bg-stone-100 dark:bg-stone-950 bg-opacity-30 dark:bg-opacity-30 rounded-box p-4">
+            <div className="px-5 animate-fade backdrop-filter backdrop-blur-lg border-2 border-base-200 dark:border-stone-800 bg-stone-100 dark:bg-stone-950 bg-opacity-30 dark:bg-opacity-30 rounded-box p-4">
               <p className="animate-fade-up animate-duration-800 animate-once text-3xl font-semibold">
                 Hello!
               </p>
@@ -43,7 +43,7 @@ export default function Home() {
           {" "}
           <br></br>
           <div className="desktop:px-[5%] px-0 pb-6">
-            <div className="px-5 animate-fade animate-duration-[2000ms] animate-delay-[3000ms] backdrop-filter backdrop-blur-lg border-2 border-base-200 dark:border-stone-950 bg-stone-100 dark:bg-stone-950 bg-opacity-30 dark:bg-opacity-30 rounded-box p-4">
+            <div className="px-5 animate-fade animate-duration-[2000ms] animate-delay-[3000ms] backdrop-filter backdrop-blur-lg border-2 border-base-200 dark:border-stone-800 bg-stone-100 dark:bg-stone-950 bg-opacity-30 dark:bg-opacity-30 rounded-box p-4">
               <p className="animate-fade-up animate-duration-800 animate-once text-xl font-semibold">
                 My latest project
               </p>

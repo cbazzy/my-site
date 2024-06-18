@@ -1,9 +1,61 @@
 import Link from "next/link";
-import React from "react";
+import React, { useRef, useState, useEffect } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 
 export default function NavBar() {
+  const [showCaptcha, setShowCaptcha] = useState(false);
+  const captchaRef = useRef<HTMLDivElement>(null);
+
+  const onCaptchaChange = (value: any) => {
+    console.log("Captcha value: ", value);
+    if (value) {
+      triggerDownload();
+    }
+  };
+
+  const triggerDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/CV_June_24.pdf";
+    link.download = "Callum_B_CV.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    setShowCaptcha(false);
+  };
+
+  useEffect(() => {
+    const handleClickOutside = (event: any) => {
+      if (
+        (captchaRef.current as HTMLElement) &&
+        !(captchaRef.current as HTMLElement).contains(event.target)
+      ) {
+        setShowCaptcha(false); // Step 3: Check if the click is outside
+      }
+    };
+
+    const handleFocusChange = (event: any) => {
+      if (
+        (captchaRef.current as HTMLElement) &&
+        !(captchaRef.current as HTMLElement).contains(event.target)
+      ) {
+        setShowCaptcha(false); // Step 3: Check if the focus change is outside
+      }
+    };
+
+    if (showCaptcha) {
+      document.addEventListener("mousedown", handleClickOutside);
+      document.addEventListener("focusin", handleFocusChange);
+    }
+
+    // Step 4: Cleanup event listeners
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("focusin", handleFocusChange);
+    };
+  }, [showCaptcha]); // Re-run when showCaptcha changes
+
   return (
-    <div className="z-50 sticky top-0 animate-fade-down animate-duration-200 animate-once navbar bg-stone-100 dark:bg-stone-950 border-b-2 border-base-200 backdrop-filter backdrop-blur-lg bg-opacity-30 dark:backdrop-filter dark:backdrop-blur-lg dark:bg-opacity-30">
+    <div className="z-50 sticky top-0 animate-fade-down animate-duration-200 animate-once navbar bg-stone-100 dark:bg-stone-950 border-b-2 border-base-200 dark:border-stone-800 backdrop-filter backdrop-blur-lg bg-opacity-30 dark:backdrop-filter dark:backdrop-blur-lg dark:bg-opacity-30">
       <div className="navbar-start">
         <div className="dropdown">
           <div
@@ -70,36 +122,35 @@ export default function NavBar() {
         </Link>
       </div>
       <div className="navbar-end">
-        {/* <button className="btn btn-ghost btn-circle">
+        <button
+          className="btn btn-ghost btn-circle mr-2"
+          onClick={() => setShowCaptcha(true)}
+        >
           <svg
+            className="fill-black dark:fill-white"
+            width="24"
+            height="24"
             xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-            />
+            <path d="M3 24h19v-23h-1v22h-18v1zm17-24h-18v22h18v-22zm-1 1h-16v20h16v-20zm-2 16h-12v1h12v-1zm0-3h-12v1h12v-1zm0-3h-12v1h12v-1zm-7.348-3.863l.948.3c-.145.529-.387.922-.725 1.178-.338.257-.767.385-1.287.385-.643 0-1.171-.22-1.585-.659-.414-.439-.621-1.04-.621-1.802 0-.806.208-1.432.624-1.878.416-.446.963-.669 1.642-.669.592 0 1.073.175 1.443.525.221.207.386.505.496.892l-.968.231c-.057-.251-.177-.449-.358-.594-.182-.146-.403-.218-.663-.218-.359 0-.65.129-.874.386-.223.258-.335.675-.335 1.252 0 .613.11 1.049.331 1.308.22.26.506.39.858.39.26 0 .484-.082.671-.248.187-.165.322-.425.403-.779zm3.023 1.78l-1.731-4.842h1.06l1.226 3.584 1.186-3.584h1.037l-1.734 4.842h-1.044z" />
           </svg>
-        </button> */}
-        <a href="/CV_June_24.pdf" download="Callum_B_CV.pdf" target="_blank">
-          <button className="btn btn-ghost btn-circle mr-2">
-            <svg
-              className="fill-black dark:fill-white"
-              width="24"
-              height="24"
-              xmlns="http://www.w3.org/2000/svg"
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-            >
-              <path d="M3 24h19v-23h-1v22h-18v1zm17-24h-18v22h18v-22zm-1 1h-16v20h16v-20zm-2 16h-12v1h12v-1zm0-3h-12v1h12v-1zm0-3h-12v1h12v-1zm-7.348-3.863l.948.3c-.145.529-.387.922-.725 1.178-.338.257-.767.385-1.287.385-.643 0-1.171-.22-1.585-.659-.414-.439-.621-1.04-.621-1.802 0-.806.208-1.432.624-1.878.416-.446.963-.669 1.642-.669.592 0 1.073.175 1.443.525.221.207.386.505.496.892l-.968.231c-.057-.251-.177-.449-.358-.594-.182-.146-.403-.218-.663-.218-.359 0-.65.129-.874.386-.223.258-.335.675-.335 1.252 0 .613.11 1.049.331 1.308.22.26.506.39.858.39.26 0 .484-.082.671-.248.187-.165.322-.425.403-.779zm3.023 1.78l-1.731-4.842h1.06l1.226 3.584 1.186-3.584h1.037l-1.734 4.842h-1.044z" />
-            </svg>
-          </button>
-        </a>
+        </button>
+        {showCaptcha && (
+          <div
+            ref={captchaRef}
+            className="flex-col fixed mt-60 mr-2 p-4 flex px-5 animate-fade-left animate-duration-300 backdrop-filter backdrop-blur-lg border-2 border-base-200 dark:border-stone-800 bg-stone-100 dark:bg-stone-800 bg-opacity-30 dark:bg-opacity-30 rounded-box"
+          >
+            <p className="text-center pb-2">Please confirm to download.</p>
+            <ReCAPTCHA
+              className="animate-fade"
+              sitekey="6LcuYPspAAAAAK_w0I0JU3YIjEEXR7ML5elgWxLi"
+              onChange={onCaptchaChange}
+              onExpired={() => setShowCaptcha(false)}
+            />
+          </div>
+        )}
       </div>
     </div>
   );
