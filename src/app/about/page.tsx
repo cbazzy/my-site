@@ -16,7 +16,7 @@ export default function Home() {
         <div className="caret-transparent z-10 file:w-screen flex flex-col px-[10%] desktop:px-[20%]">
           {" "}
           <br></br>
-          <div className="desktop:px-[5%] px-0 pt-6">
+          <div className="desktop:px-[5%] px-0 py-6">
             <div className="px-5 animate-fade backdrop-filter backdrop-blur-lg border-2 border-base-200 dark:border-stone-800 bg-stone-100 dark:bg-stone-950 bg-opacity-30 dark:bg-opacity-30 rounded-box p-4">
               <p className="animate-fade-up animate-duration-800 animate-once text-3xl font-semibold">
                 Hello!

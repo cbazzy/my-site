@@ -11,11 +11,15 @@ export default function Welcome() {
         Junior Software Developer
       </h2>
       <br></br>
-      <Link href="/about">
-        <Button className="animate-fade animate-delay-100 select-none font-light mt-0 inline-flex items-center gap-2 rounded-md bg-gray-700 py-1.5 px-3 text-sm/6 text-white shadow-inner shadow-white/10 focus:outline-none data-[hover]:bg-gray-600 data-[open]:bg-gray-700 data-[focus]:outline-1 data-[focus]:outline-white ">
-          Learn more...
-        </Button>
-      </Link>
+<div><a href="/about"
+	className="m-4 group relative inline-block overflow-hidden rounded border border-gray-400 bg-gray-800  px-12 py-3 text-sm font-medium text-slate-200 hover:text-white focus:outline-none focus:ring active:bg-indigo-600 active:text-white">
+	<span className="ease absolute left-0 top-0 h-0 w-0 border-t-2 border-sky-200 dark:border-gray-100 transition-all duration-200 group-hover:w-full"></span>
+	<span className="ease absolute right-0 top-0 h-0 w-0 border-r-2 border-sky-200 dark:border-gray-100 transition-all duration-200 group-hover:h-full"></span>
+	<span className="ease absolute bottom-0 right-0 h-0 w-0 border-b-2 border-sky-200 dark:border-gray-100 transition-all duration-200 group-hover:w-full"></span>
+	<span className="ease absolute bottom-0 left-0 h-0 w-0 border-l-2 border-sky-200 dark:border-gray-100 transition-all duration-200 group-hover:h-full"></span>
+	Learn more...
+</a></div>
+
     </>
   );
 }
