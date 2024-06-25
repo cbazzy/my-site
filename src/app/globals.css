@@ -3,9 +3,21 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  background: linear-gradient(0deg, white 0%, #80dbff 100%);
+  background-size: 200% 200%; /* Essential for the animation */
+  animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 05% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
 }
 
 ::selection {
@@ -15,9 +27,9 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 20, 20, 20;
+    background: linear-gradient(0deg, black 0%,  #0d0d0d 100%);
+    background-size: 200% 200%; /* Essential for the animation */
+    animation: gradientBG 15s ease infinite;
   }
   ::selection {
     color: #ffdab9;
