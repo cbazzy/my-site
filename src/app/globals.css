@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  background: linear-gradient(0deg, white 0%, #80dbff 100%);
+  background: linear-gradient(0deg, white 50%, #6cc7eb 100%);
   background-size: 200% 200%; /* Essential for the animation */
   animation: gradientBG 15s ease infinite;
 }
@@ -27,7 +27,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    background: linear-gradient(0deg, black 0%,  #0d0d0d 100%);
+    background: linear-gradient(0deg, black 0%, #0d0d0d 100%);
     background-size: 200% 200%; /* Essential for the animation */
     animation: gradientBG 15s ease infinite;
   }
