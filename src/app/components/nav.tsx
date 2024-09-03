@@ -115,10 +115,7 @@ export default function NavBar() {
               </a>
             </li>
             <li>
-              <a
-                href="mailto:callumbasnett+enquiries@gmail.com"
-                target="_blank"
-              >
+              <a href="mailto:callum@callumb.me" target="_blank">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"

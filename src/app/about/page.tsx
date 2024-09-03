@@ -22,18 +22,26 @@ export default function Home() {
                 Hello!
               </p>
               <br></br>
-              <br></br>
               <p className="animate-fade animate-duration-1000 animate-delay-[1200ms] animate-once">
                 I&apos;m Callum, a junior software developer based in the UK.
-                I&apos;m currently studying at the School of Code bootcamp as a
-                member of Cohort 16 and I&apos;m getting ready for my first role
-                in the industry.
+                I&apos;m recenrly graduated from the School of Code bootcamp in
+                Birmingham as a member of Cohort 16 and I&apos;m getting ready
+                for my first role in the industry.
               </p>
               <br></br>
+              <p className="animate-fade animate-duration-1000 animate-delay-[2200ms] animate-once">
+                Thanks for taking a look at my site.
+              </p>
               <br></br>
               <p className="animate-fade animate-duration-1000 animate-delay-[2200ms] animate-once">
-                Thanks for taking a look at my site. It&apos;s under
-                construction, but I hope to have it finished soon.
+                This is a place where I mess around with Next.js, Tailwind and
+                other technologies. It&apos;s under construction, but I hope to
+                have it finished soon.
+              </p>
+              <br></br>
+              <p className="animate-fade animate-duration-1000 animate-delay-[2200ms] animate-once">
+                It&apos;s under construction, but I hope to have it finished
+                soon.
               </p>
               <br></br>
             </div>
