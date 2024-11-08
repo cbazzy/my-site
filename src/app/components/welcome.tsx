@@ -7,8 +7,15 @@ export default function Welcome() {
       <h1 className="animate-fade text-4xl desktop:text-7xl font-thin select-none">
         Callum Basnett
       </h1>
+      <br></br>
       <h2 className="animate-fade text-2xl desktop:text-4xl select-none">
         Junior Software Developer
+      </h2>
+
+      <h2 className="animate-fade text-2xl desktop:text-4xl select-none">+</h2>
+
+      <h2 className="animate-fade text-2xl desktop:text-4xl select-none">
+        IT Support Specialist
       </h2>
       <br></br>
       <div>
