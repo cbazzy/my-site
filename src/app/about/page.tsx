@@ -32,7 +32,7 @@ export default function Home() {
                 have it finished soon.
               </p>
               <br></br>
-              <p>
+              <p className="animate-fade animate-duration-1000 animate-delay-[1200ms] animate-once">
                 I am dynamic junior developer and IT professional with a unique
                 blend of bootcamp-intensive training and hands-on experience and
                 a proud graduate of the School of Code program, a UK
@@ -40,68 +40,74 @@ export default function Home() {
                 industry-focused curriculum.
               </p>
               <br></br>
-              <p className="font-semibold">My Educational Highlights</p>
-              <ul className="list-disc list-inside">
-                <li>
+              <p className="className=animate-fade animate-duration-1000 animate-delay-[1200ms] animate-once font-semibold">
+                My Educational Highlights
+              </p>
+              <ul className="list-disc list-inside ">
+                <li className="animate-fade animate-duration-1000 animate-delay-[1200ms] animate-once">
                   Completed the highly selective School of Code bootcamp in
                   Birmingham
                 </li>
-                <li>
+                <li className="animate-fade animate-duration-1000 animate-delay-[1200ms] animate-once">
                   Trained in an environment that mirrors real-world development
                   teams
                 </li>
-                <li>
+                <li className="animate-fade animate-duration-1000 animate-delay-[1200ms] animate-once">
                   Experienced full software development lifecycle through
                   intensive, project-based learning
                 </li>
-                <li>
+                <li className="animate-fade animate-duration-1000 animate-delay-[1200ms] animate-once">
                   Developed strong collaborative skills through simulated
                   enterprise development scenarios
                 </li>
               </ul>
               <br></br>
-              <p className="font-semibold">My Professional Distinctives</p>
+              <p className="font-semibold animate-fade animate-duration-1000 animate-delay-[1200ms] animate-once">
+                My Professional Distinctives
+              </p>
               <ul className="list-disc list-inside">
-                <li>
+                <li className="animate-fade animate-duration-1000 animate-delay-[1200ms] animate-once">
                   Combines fresh perspective with practical industry
                   understanding
                 </li>
-                <li>
+                <li className="animate-fade animate-duration-1000 animate-delay-[1200ms] animate-once">
                   Experienced in modern development practices and agile
                   methodologies
                 </li>
-                <li>
+                <li className="animate-fade animate-duration-1000 animate-delay-[1200ms] animate-once">
                   Proven ability to thrive in high-pressure, fast-paced
                   environments
                 </li>
-                <li>
+                <li className="animate-fade animate-duration-1000 animate-delay-[1200ms] animate-once">
                   Strong foundation in both technical skills and professional
                   team dynamics
                 </li>
-                <li>
+                <li className="animate-fade animate-duration-1000 animate-delay-[1200ms] animate-once">
                   Experienced in IT support and customer service roles, with
                   experience in the highly competitive MSP sector.
                 </li>
               </ul>
               <br></br>
-              <p>
+              <p className="animate-fade animate-duration-1000 animate-delay-[1200ms] animate-once">
                 I&apos;m currently open to opportunities to leverage this
                 comprehensive training where I might contribute to
                 forward-thinking teams at a forward-thinking organisation with a
                 mission I can get behind.
               </p>
               <br></br>
-              <p>
+              <p className="animate-fade animate-duration-1000 animate-delay-[1200ms] animate-once">
                 You are very welcome to take a look at my CV - you can download
                 this with the button found in the top right.
               </p>
               <br></br>
-              <p>
+              <p className="animate-fade animate-duration-1000 animate-delay-[1200ms] animate-once">
                 To the top left, you will find a link to my LinkedIn profile, my
                 GitHub account, and my email address. Feel free to reach out.
               </p>
               <br></br>
-              <p>Feel free to reach out.</p>
+              <p className="animate-fade animate-duration-1000 animate-delay-[1200ms] animate-once">
+                Feel free to reach out.
+              </p>
               <br></br>
             </div>
           </div>
