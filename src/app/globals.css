@@ -47,3 +47,12 @@ body {
     text-wrap: balance;
   }
 }
+
+.list-disc {
+  list-style-position: outside;
+  padding-left: 4rem; /* Adjust this value as needed */
+}
+
+.list-disc li {
+  margin-left: -1.5rem; /* Adjust this value as needed */
+}
