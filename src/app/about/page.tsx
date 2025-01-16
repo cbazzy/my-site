@@ -19,29 +19,89 @@ export default function Home() {
           <div className="desktop:px-[5%] px-0 py-6">
             <div className="px-5 animate-fade backdrop-filter backdrop-blur-lg border-2 border-base-200 dark:border-stone-800 bg-stone-100 dark:bg-stone-950 bg-opacity-30 dark:bg-opacity-30 rounded-box p-4">
               <p className="animate-fade-up animate-duration-800 animate-once text-3xl font-semibold">
-                Hello!
+                Hello there!
               </p>
               <br></br>
               <p className="animate-fade animate-duration-1000 animate-delay-[1200ms] animate-once">
-                I&apos;m Callum, a junior developer and IT professional based in
-                the UK. I&apos;m a recent graduate from the School of Code
-                bootcamp in Birmingham as a member of Cohort 16.
+                Thanks for taking a look at my website.
               </p>
               <br></br>
-              <p className="animate-fade animate-duration-1000 animate-delay-[2200ms] animate-once">
-                Thanks for taking a look at my site.
-              </p>
-              <br></br>
-              <p className="animate-fade animate-duration-1000 animate-delay-[2200ms] animate-once">
+              <p className="animate-fade animate-duration-1000 animate-delay-[1200ms] animate-once">
                 This is a place where I mess around with Next.js, Tailwind and
                 other technologies. It&apos;s under construction, but I hope to
                 have it finished soon.
               </p>
               <br></br>
-              <p className="animate-fade animate-duration-1000 animate-delay-[2200ms] animate-once">
-                It&apos;s under construction, but I hope to have it finished
-                soon.
+              <p>
+                I am dynamic junior developer and IT professional with a unique
+                blend of bootcamp-intensive training and hands-on experience and
+                a proud graduate of the School of Code program, a UK
+                government-backed initiative renowned for its rigorous,
+                industry-focused curriculum.
               </p>
+              <br></br>
+              <p className="font-semibold">My Educational Highlights</p>
+              <ul className="list-disc list-inside">
+                <li>
+                  Completed the highly selective School of Code bootcamp in
+                  Birmingham
+                </li>
+                <li>
+                  Trained in an environment that mirrors real-world development
+                  teams
+                </li>
+                <li>
+                  Experienced full software development lifecycle through
+                  intensive, project-based learning
+                </li>
+                <li>
+                  Developed strong collaborative skills through simulated
+                  enterprise development scenarios
+                </li>
+              </ul>
+              <br></br>
+              <p className="font-semibold">My Professional Distinctives</p>
+              <ul className="list-disc list-inside">
+                <li>
+                  Combines fresh perspective with practical industry
+                  understanding
+                </li>
+                <li>
+                  Experienced in modern development practices and agile
+                  methodologies
+                </li>
+                <li>
+                  Proven ability to thrive in high-pressure, fast-paced
+                  environments
+                </li>
+                <li>
+                  Strong foundation in both technical skills and professional
+                  team dynamics
+                </li>
+                <li>
+                  Experienced in IT support and customer service roles, with
+                  experience in the highly competitive MSP sector.
+                </li>
+              </ul>
+              <br></br>
+              <p>
+                I&apos;m currently open to opportunities to leverage this
+                comprehensive training where I might contribute to
+                forward-thinking teams at a forward-thinking organisation with a
+                mission I can get behind.
+              </p>
+              <br></br>
+              <p>
+                You are very welcome to take a look at my CV - you can download
+                this with the button found in the top right.
+              </p>
+              <br></br>
+              <p>
+                To the top left, you will find a link to my LinkedIn profile, my
+                GitHub account, and my email address. Feel free to reach out.
+              </p>
+              <br></br>
+              <p>Feel free to reach out.</p>
               <br></br>
             </div>
           </div>
