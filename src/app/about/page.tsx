@@ -18,7 +18,13 @@ export default function Home() {
           <div className="desktop:px-[5%] px-0 py-2">
             <div className="px-5 animate-fade backdrop-filter backdrop-blur-lg border-2 border-base-200 dark:border-stone-800 bg-stone-100 dark:bg-stone-950 bg-opacity-30 dark:bg-opacity-30 rounded-box p-4">
               <p className="animate-fade-up animate-duration-800 animate-once text-3xl font-semibold">
-                Hello there!
+                Hello there! 👋
+              </p>
+              <br></br>
+              <p className="animate-fade animate-duration-1000 animate-delay-[1000ms] animate-once">
+                This is a place where I mess around with Next.js, Tailwind and
+                other technologies. It&apos;s under construction, but I hope to
+                have it finished soon.
               </p>
               <br />
               <p className="animate-fade animate-duration-1000 animate-delay-[1200ms] animate-once">
@@ -35,15 +41,9 @@ export default function Home() {
                 About Me
               </p>
               <br />
-              <p className="animate-fade animate-duration-1000 animate-delay-[3400ms] animate-once">
-                This is a place where I mess around with Next.js, Tailwind and
-                other technologies. It&apos;s under construction, but I hope to
-                have it finished soon.
-              </p>
-              <br />
               <p className="animate-fade animate-duration-1000 animate-delay-[3600ms] animate-once">
-                I'm Callum, am dynamic junior developer and IT professional with
-                a unique blend of bootcamp-intensive training and hands-on
+                I&apos;m Callum, am dynamic junior developer and IT professional
+                with a unique blend of bootcamp-intensive training and hands-on
                 experience and a proud graduate of the School of Code program, a
                 UK government-backed initiative renowned for its rigorous,
                 industry-focused curriculum.
@@ -99,25 +99,29 @@ export default function Home() {
                 </li>
               </ul>
               <br />
-              <p className="animate-fade animate-duration-1000 animate-delay-[6000ms] animate-once">
+              <p className="animate-fade animate-duration-1000 animate-delay-[6000ms] animate-once line-through">
                 I&apos;m currently open to opportunities to leverage this
                 comprehensive training where I might contribute to
                 forward-thinking teams at a forward-thinking organisation with a
                 mission I can get behind.
               </p>
               <br />
-              <p className="animate-fade animate-duration-1000 animate-delay-[6200ms] animate-once">
+              <p className="animate-fade animate-duration-1000 animate-delay-[6200ms] animate-once line-through">
                 You are very welcome to take a look at my CV - you can download
                 this with the button found in the top right.
               </p>
               <br />
-              <p className="animate-fade animate-duration-1000 animate-delay-[6400ms] animate-once">
+              <p className="animate-fade animate-duration-1000 animate-delay-[6400ms] animate-once line-through">
                 To the top left, you will find a link to my LinkedIn profile, my
                 GitHub account, and my email address. Feel free to reach out.
               </p>
-              <br />
-              <p className="animate-fade animate-duration-1000 animate-delay-[6600ms] animate-once">
+              <br></br>
+              <p className="animate-fade animate-duration-1000 animate-delay-[6600ms] animate-once line-through">
                 Feel free to reach out.
+              </p>
+              <br></br>
+              <p className="animate-fade animate-duration-1000 animate-delay-[6900ms] animate-once font-black">
+                Update: I&apos;m now happily employed in a full-time role! 😃
               </p>
             </div>
           </div>
@@ -127,7 +131,7 @@ export default function Home() {
           <div className="desktop:px-[5%] px-0 pb-6">
             <div className="px-5 animate-fade animate-duration-[2000ms] animate-delay-[6800ms] backdrop-filter backdrop-blur-lg border-2 border-base-200 dark:border-stone-800 bg-stone-100 dark:bg-stone-950 bg-opacity-30 dark:bg-opacity-30 rounded-box p-4">
               <p className="animate-fade-up animate-duration-800 animate-once text-xl font-semibold">
-                My latest project
+                My final project for School of Code: SocBrain
               </p>
               <br />
               <p className="animate-fade animate-duration-1000 animate-delay-[7000ms] animate-once">
